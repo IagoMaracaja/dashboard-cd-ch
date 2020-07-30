@@ -1,0 +1,30 @@
+.card-item {
+  padding: 25px;
+  color: white;
+}
+
+.active-sourcing {
+  background: linear-gradient(90deg, rgba(245, 191, 153, 1) 0%, rgba(244, 179, 166, 1) 35%, rgba(244, 181, 183, 1) 100%);
+}
+
+.weekly-active {
+  background: linear-gradient(90deg, rgba(147, 192, 244, 1) 0%, rgba(157, 193, 241, 1) 35%, rgba(141, 182, 237, 1) 100%);
+}
+
+.nps {
+  background: linear-gradient(90deg, rgba(147, 212, 208, 1) 0%, rgba(165, 222, 213, 1) 35%, rgba(155, 222, 206, 1) 100%);
+}
+
+.title {
+  margin: 10px;
+}
+
+.current-period{
+  margin: 10px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.last-period{
+  margin: 10px;
+}

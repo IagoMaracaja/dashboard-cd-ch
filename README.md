@@ -1,27 +1,30 @@
-# Dashboard
+# Dashboard Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 
-## Development server
+### How to run this project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+    Navigate to the source folder and run 'ng server'
+```
 
-## Code scaffolding
+```
+    Open your browser at 'http://localhost:4200/'
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### How to run the tests
 
-## Build
+```
+    The tests is under the folder 'e2e' and was created using the PageObject Pattern
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+###### Steps to run the tests on Google Chrome
+* Open the **terminal** at the project root
+* **Run** `webdriver-manager update --versions.chrome=84.0.4147.30`
+* **84.0.4147.30** is the version of my Google Chrome, if you have another version, you can download it from https://chromedriver.chromium.org/downloads
+* If you was able to run without errors, now we'll start the ``webdriver`` server
+* To do that, you just need to run:
+* `webdriver-manager start`
+* To run the suite of the test, open another instance of **terminal** at the project root and run: 
+* `protractor e2e/protractor.conf.js --suite dashboard`
+* The suite `dashboard` is configured on `protractor.config.js`
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

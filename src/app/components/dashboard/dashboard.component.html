@@ -1,0 +1,40 @@
+<div class="cards">
+  <div class="row">
+    <div class="col-12">
+      <div class="float-right filter">
+        <label>
+          Filter By
+          <select id="filter-id" (change)="this.filterChanged($event.target.value)">
+            <option></option>
+            <option [value]="i" *ngFor="let option of filters; let i = index;"> {{ option }}</option>
+          </select>
+        </label>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="cards-items">
+      <div class="col-4">
+        <dashboard-card
+          [dashboardItem]="this.dashboardData.data.active_source"
+          [dashboardType]="dashboardType.ACTIVE_SOURCING">
+        </dashboard-card>
+      </div>
+      <div class="col-4">
+        <dashboard-card
+          [dashboardItem]="this.dashboardData.data.weekly_active"
+          [dashboardType]="dashboardType.WEEKLY_ACTIVE">
+        </dashboard-card>
+      </div>
+      <div class="col-4">
+        <dashboard-card
+          [dashboardItem]="this.dashboardData.data.nps"
+          [dashboardType]="dashboardType.NPS">
+        </dashboard-card>
+      </div>
+    </div>
+  </div>
+
+
+</div>
