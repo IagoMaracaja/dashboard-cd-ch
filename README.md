@@ -4,7 +4,7 @@
 ### How to run this project
 
 ```
-    Navigate to the source folder and run 'ng server'
+    Navigate to the source folder and run 'ng serve'
 ```
 
 ```
